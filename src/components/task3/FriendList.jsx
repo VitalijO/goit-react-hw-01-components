@@ -1,3 +1,4 @@
+import "./Friends.css"
 import PropTypes from 'prop-types';
 import { Friend } from './FriendListItem'; 
 

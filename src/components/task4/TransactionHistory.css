@@ -1,0 +1,12 @@
+.transaction-history, th, td{
+border: 1px solid rgb(22, 17, 22);
+padding: 0 20px 0 20px;
+}
+
+th{
+    background: rgb(49, 184, 224);
+}
+tr:nth-child(odd) {
+    background: #fff;
+}
+

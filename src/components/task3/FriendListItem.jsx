@@ -1,9 +1,12 @@
+import "./Friends.css"
 import PropTypes from 'prop-types';
 
-export const Friend= ({friend: {avatar, name, isOnline }}) => {
+export const Friend = ({ friend: { avatar, name, isOnline } }) => {
+  const classNames = ["status", isOnline];
+  if (isOnline ===true) classNames.push("online")
     return (  
-    <>
-  <span className="status">{isOnline}</span>
+    <>     
+  <span className={classNames.join(" ")}>{isOnline}</span>       
   <img className="avatar" src={avatar} alt="User avatar" width="48" />
   <p className="name">{name}</p>
     </>    
@@ -17,3 +20,4 @@ Friend.propTypes = {
         isOnline: PropTypes.bool.isRequired,
     }).isRequired,
 }
+
