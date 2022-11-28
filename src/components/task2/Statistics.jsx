@@ -1,3 +1,4 @@
+import "./Statistic.css"
 import PropTypes from 'prop-types';
 
 export const Statistics= ({el: {label, percentage}}) => {

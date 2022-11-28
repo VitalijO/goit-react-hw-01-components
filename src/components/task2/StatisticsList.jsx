@@ -1,5 +1,9 @@
+import "./Statistic.css"
 import PropTypes from 'prop-types';
 import { Statistics } from './Statistics'; 
+import { random } from "./random.js";
+
+ 
 
 export const StatisticsList = ({data}) => {
     return (
@@ -8,7 +12,9 @@ export const StatisticsList = ({data}) => {
 
     <ul className="stat-list">
       {data.map(el => (
-        <li className="item" key={el.id}>
+        <li className="item-data" key={el.id}
+        style={{backgroundColor:random()}}>
+
               <Statistics el={el} />
         </li>
       ))}

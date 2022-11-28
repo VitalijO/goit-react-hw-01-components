@@ -1,0 +1,16 @@
+.stat-list{
+    display:flex;
+    flex-direction: row;
+}
+ 
+.item-data{
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 10px;
+   width: 100px;
+   height: 100px;
+   outline: 1px solid red;
+   
+}
