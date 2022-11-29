@@ -1,10 +1,11 @@
-import "./Statistic.css"
-import PropTypes from 'prop-types';
+ import PropTypes from 'prop-types';
 
-export const Statistics= ({el: {label, percentage}}) => {
+export const Statistics= ({title, stats: {label, percentage}}) => {
     return (  
-  
     <>
+    {title && (
+    <h2 className="label">Upload stats</h2>
+      )}
       <span className="label"> {label} </span>
       <span className="percentage">{percentage} %</span>
     </>
@@ -13,7 +14,8 @@ export const Statistics= ({el: {label, percentage}}) => {
 }
  
 Statistics.propTypes = {
-    el: PropTypes.shape({
+    title :PropTypes.string,
+    stats: PropTypes.shape({
         label: PropTypes.string.isRequired,
         percentage: PropTypes.number.isRequired,
     }).isRequired,

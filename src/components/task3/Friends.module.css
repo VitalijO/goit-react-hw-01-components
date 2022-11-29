@@ -1,4 +1,4 @@
-.friend-list{
+.friendlist{
     display: flex;
     flex-direction: column;
 
@@ -13,10 +13,14 @@
 .status{
    width: 15px;
    height: 15px;
-   border-radius: 50%;
-   background-color: red;
+   border-radius: 50%; 
 }
 
-.status.online{
+
+.false{
+    background-color: red;
+}
+
+.true{
     background-color: green;
 }

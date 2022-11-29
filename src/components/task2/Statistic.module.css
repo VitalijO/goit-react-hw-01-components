@@ -1,9 +1,9 @@
-.stat-list{
+.stat{
     display:flex;
     flex-direction: row;
 }
  
-.item-data{
+.item{
    display: flex;
    flex-direction: column;
    justify-content: center;
@@ -12,5 +12,4 @@
    width: 100px;
    height: 100px;
    outline: 1px solid red;
-   
 }

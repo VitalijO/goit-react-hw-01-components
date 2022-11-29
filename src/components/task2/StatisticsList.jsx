@@ -1,4 +1,4 @@
-import "./Statistic.css"
+import css from "./Statistic.module.css"
 import PropTypes from 'prop-types';
 import { Statistics } from './Statistics'; 
 import { random } from "./random.js";
@@ -7,15 +7,15 @@ import { random } from "./random.js";
 
 export const StatisticsList = ({data}) => {
     return (
-       <section className="statistics">
-  <h2 className="label">Upload stats</h2>
+      <section className="statistics">
+       
 
-    <ul className="stat-list">
-      {data.map(el => (
-        <li className="item-data" key={el.id}
+    <ul className={css.stat}>
+      {data.map(stats => (
+        <li className={css.item} key={stats.id}
         style={{backgroundColor:random()}}>
 
-              <Statistics el={el} />
+              <Statistics stats={stats} />
         </li>
       ))}
     </ul></section>

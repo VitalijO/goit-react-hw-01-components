@@ -1,17 +1,16 @@
 
-
-
 .profile{
     display: inline-block;
-    text-align: center;
+    
     background-color: rgb(103, 134, 124) ;
     width:271px ;
     outline: 1px solid blueviolet;
 }
 
 
-.description img{
+.description{
     width: 150px;
+    text-align: center;
 }
 
 .stats{
@@ -20,7 +19,7 @@
     justify-content: center;
 }
 
-.stats li{
+.item{
     background-color: brown;
     outline: 1px solid blueviolet;
     width: 90px;
